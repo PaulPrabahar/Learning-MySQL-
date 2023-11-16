@@ -2,3 +2,21 @@ Database:
         Database is a systematic procedure to store data. It also provied
 systematic method for user to store data, retrive data and manage data 
 in a efficient and easy way.
+
+To create database in mySQL:
+          To create a database in mySQL we use a keyword "CREATE DATABASE" and followed by name of the 
+database."mydb" which then represented as  "CREATE DATABASE mydb".
+
+To use the current database in mySQL :
+          To use a database in mysql we use a keyword "USE" followed by  a database name "mydb".
+i.e: USE mydb  
+
+To delete or drop the database in mySQL:
+         To delete or drop a database we use the keyword "DROP DATABASE", This will remove the current database 
+in use. which is then followed by a database name "myDB". i.e. DROP DATABASE myDB.
+
+Altering database in mysql:
+         We can alter the structure and properties of a database using keyword "ALTER DATABASE" followed
+by the database name "myDB" the type of alter we intended.in this case making the document read only
+"READ ONLY = 1" i.e: ALTER DATABASE myDB READ ONLY = 1. READ ONLY makes the database readble but cannot do 
+any modification but data can be accessed.
