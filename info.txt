@@ -1,0 +1,4 @@
+Database:
+        Database is a systematic procedure to store data. It also provied
+systematic method for user to store data, retrive data and manage data 
+in a efficient and easy way.
