@@ -1,0 +1,111 @@
+Tables:
+The relational database are made up of tables where the data are stored i rows and column.
+Rows: Each row defines a specific record or data entry.
+Column: Each column define a specific field of a data.
+
+////////////////////////////////////// To create a table ///////////////////////////////////////////////
+To create a table in mysql:
+        In relational database data are stored in a table. To create a table we use the keyword
+"CREATE TABLE" followed by the name of the table with paranthesis "employee ();". To create column
+inside the table enter their name inside the paranthesis also mention their datatype "employee_id INT"
+             
+                       * INT to get integer value
+                       * VARCHAR(50) to get char with varying string also mention the maximum amount of values
+                       * DECIMAL(5, 2) to get values in decimal mention the max digit and decimal point precision
+                       * DATE to get valus as date. 
+
+eg:- CREATE TABLE personal_info (
+	 first_name VARCHAR(20),
+     last_name VARCHAR(20),
+     date_of_birth DATE
+);
+
+//////////////////////////////////////////// To select a table from database ////////////////////////////////////////
+
+To select a table from database:
+                   To select a table fro database we use the keyword "SELECT *" followed by the keyword 
+"FROM" and the name of the table "employees" 
+i.e SELECT * FROM employees;
+              "*" is a wildcard character that is used to represent all the available column.
+              "FROM" is used with SELECT keyword it defines whether it should query the columns from a table
+tables 
+eg:- SELECT * FROM personal_info ;    
+
+/////////////////////////////////////////// To rename a table ////////////////////////////////////////////////////////
+
+To rename a table from database:
+            We can rename a table from database using keyword "RENAME" followed by the keyword "TABLE", followed by the existing table name
+"employees" followed by a keyword "To" and followed by the new name for the table "worker"
+i.e RENAME TABLE employees TO worker ;
+
+eg:- RENAME TABLE personal_info TO info;
+
+////////////////////////////////////////////////// To delete a table /////////////////////////////////////////////////
+
+To delete a table from database:
+                To delete a table from database we use the keyword "DROP" which is then followed by the keyword "TABLE" and then followed by
+the name of the table. i.e: DROP TABLE employees;
+
+eg:- DROP TABLE info;
+
+
+////////////////////////////////////////// To Alter a table and add new column ///////////////////////////////
+
+To alter a table from database:
+           To alter a table from database we use the keyword "ALTER" followed by the keyword "TABLE" to 
+represent a table and followed by the table name "employees"
+i.e: ALTER TABLE employees;
+
+eg:- ALTER TABLE info;
+
+after this let's add a new column called hired in the employees table
+to add we use the keyword "ADD" followed by the column name "hired" with data type followed "VARCHAR(20)"
+i.e: ADD hired VARCHAR(20);
+
+eg:- ALTER TABLE info       
+     ADD gender VARCHAR(5); 
+
+
+////////////////////////////// To Alter column name of a table ///////////////////////////////////
+
+To alter a column name in a table we use keyword "ALTER" followed by table name "employees"
+then we use "RENAME" keyword followed by "COLUMN" keyword with  name of the column "hired" 
+then keyword "TO" is used represent the new column name "working"
+i.e: ALTER TABLE employees
+     RENAME COLUMN hired TO working; 
+
+e.g:- ALTER TABLE info
+      RENAME COLUMN gender TO GENDERS;
+
+////////////////////////// To modify datatype of a column /////////////////////////////////////
+
+To modify the datatype of a column we use keyword "MODIFY" followed keyword "COLUMN" 
+then their name and new datatype "hired INT"
+i.e: MODIFY COLUMN hired INT
+
+eg:- ALTER TABLE info
+     MODIFY COLUMN genders (INT)
+
+///////////////////////////// To move column in a table /////////////////////////////////////
+
+To move a column we use keyword "MODIFY" followed by the column name "hired"
+then in a new line we use keyword "AFTER" if it to be placed after a particular column
+else keyword "FIRST" if it is to be placed in the first.followed by the name column.
+i.e:MODIFY COLUMN hired INT
+    AFTER working;
+
+eg:- ALTER TABLE info
+     MODIFY COLUMN gender INT
+     AFTER last_name;
+     
+eg:- ALTER TABLE info
+     MODIFY COLUMN gender INT
+     FIRST;
+
+/////////////////////////////////// To delete a column ///////////////////////////////////
+To delete a column from database:
+          To delete a column from database we use keyword "DROP" with "COLUMN" followed by the name "hired"
+i.e: DROP COLUMN hired;
+
+eg: ALTER TABLE info
+    DROP COLUMN genders;
