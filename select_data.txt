@@ -1,0 +1,14 @@
+To select a particular data from the table we use a keyword "SELECT" "*" "FROM" 
+which is then followed by the "WHERE".
+WHERE is a condition clause which is used to select query based on a condition
+
+i.e SELECT * FROM info
+    WHERE id = 1;
+
+We can use multiple operators in where which can match our condition.
+
+/////////////// To select particular column ////////////////////////
+
+In place of * we can use particular column name to select 
+i.e SELECT first_name, last_name
+    FROM info; 
