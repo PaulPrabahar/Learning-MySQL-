@@ -1,0 +1,23 @@
+/////////////////////// To updata a data /////////////////
+we use keyword "UPDATE" followed by the name of the table then
+we use "SET" keyword to choose which data need to be modified
+and we use "WHERE" if need to updata a particular data.
+i.e: UPDATE info
+     SET first_name = "puppy"
+     WHERE first_name = "paul";
+
+if to set all first_name to "puppy" then
+i.e: UPDATE info
+     SET first_name = "puppy"
+
+with no where condition it set all the selected data to be "puppy". 
+
+//////////////////////// To delete a data ////////////////////////
+
+To delete a data from a table we use keyword "DELETE" followed by the table name.
+i.e: DELETE info;
+
+To delete a particular data we need to use "WHERE" keyword to initiate a condition.
+i.e: DELETE info;
+     WHERE first_name = "paul";
+     
