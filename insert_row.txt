@@ -1,0 +1,27 @@
+Rows:
+    In sql row is use to define a single set of data.
+
+/////////////////// To insert rows inside the table //////////////////
+
+To insert rows in the table:
+          we use a keyword "INSERT" followed by another keyword "INTO" then the table nanme "employee"
+i.e: INSERT INFO employee
+Then to add values in the row we use keywords "VALUES()" and the data are given in the parenthesis related to their datatype. 
+
+/////////////////////// To insert multiple rows inside the table ////////////////////
+
+To insert multiple rows in the table:
+           To insert multiple values inside a table we will follow the procedure a difference here is
+while using keyword "VALUES()" we need to use multiple "()" seperated by a "," 
+i.e: VALUES(), (), ();
+
+////////////////////////// TO avoid entry in values ////////////////
+
+To avoid entry in the values:
+           To avoid the entry of the certian data in the table row we need to specifi the columns where the 
+data should be entered "INSERT" "INTO" "info(a, b)" then the value should hold "VALUES(a,c)". the remaining columns will have value as null.
+i.e: INSERT INTO info (a, b)
+     VALUES(a, b);
+
+eg:- INSERT INTO info(first_name, last_name)
+     VALUES("paul", "prabahar"); 
