@@ -15,9 +15,8 @@ with no where condition it set all the selected data to be "puppy".
 //////////////////////// To delete a data ////////////////////////
 
 To delete a data from a table we use keyword "DELETE" followed by the table name.
-i.e: DELETE info;
+i.e: DELETE FROM info;
 
 To delete a particular data we need to use "WHERE" keyword to initiate a condition.
-i.e: DELETE info;
+i.e: DELETE FROM info;
      WHERE first_name = "paul";
-     
