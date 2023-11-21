@@ -1,0 +1,2 @@
+AUTO INCREAMENT:
+              AUTO INCREAMENT set to column where the  PRIMARY KEY is increamented automatically whren new data is added to the table
