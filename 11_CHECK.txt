@@ -1,0 +1,28 @@
+CHECK:
+      The check constrain is used to check what kind of values can be entered in a column, we use keyword "CHECK" 
+We can add check to column in two ways 
+Method 1 applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE hello(
+	product_name VARCHAR(25),
+    product_no INT ,                # to add check
+    product_price DECIMAL
+    CHECK(product_no >= 0)
+);
+    CREATE TABLE hello(
+	product_name VARCHAR(25),
+    product_no INT ,                # incase of dropping the check later on
+    product_price DECIMAL
+    CONSTRAIN product_no_check CHECK(product_no >= 0)
+);
+
+Method 2  using costraint with alter keyword:
+    after creating a table and we need to create a check we use  this Method
+eg: ALTER TABLE hello 
+    ADD CONSTRAINT product_no_check CHECK(product_no >= 0)
+
+
+To delete a check we can use this Method
+eg: ALTER TABLE hello
+    DROP CHECK product_no_check;
+      
