@@ -1,0 +1,18 @@
+NOT NULL:
+         Not null is a constraint used to make sure the column data in a table is not null or empty
+we can add this in two ways.
+
+Method 1 applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE hello(
+	product_name VARCHAR(25) NOT NULL,
+    product_no INT ,
+    product_price DECIMAL
+);
+
+Method 2  using costraint with alter keyword:
+    after creating a table and we need to create a unique value we use  this Method
+eg: ALTER TABLE hello 
+    MODIFY product_no INT NOT NULL;
+    
+Now the value cannot be null value.
