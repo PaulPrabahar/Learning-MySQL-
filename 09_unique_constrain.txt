@@ -1,0 +1,22 @@
+UNIQUE:
+       Unique constraint is used to avoid duplication of values in the table.
+We can use UNIQUE in two ways
+Method 1 applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE hello(
+	product_name VARCHAR(25) UNIQUE,
+    product_no INT ,
+    product_price DECIMAL
+);
+Method 2  using costraint with alter keyword:
+    after creating a table and we need to create a unique value we use  this Method
+eg: ALTER TABLE hello 
+    ADD CONSTRAINT
+    UNIQUE(product_no);    
+
+eg:
+   INSERT INTO  hello
+   VALUES ("PAUL", 1, 1.11),            #error:Error Code: 1062. Duplicate entry 'hun' for key 'hello.product_name'
+          ("pup", 2, 2.22),
+          ("hun", 3, 3.33),
+          ("hun",4, 4.44);	
