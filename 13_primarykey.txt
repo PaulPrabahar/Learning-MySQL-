@@ -1,0 +1,26 @@
+PRIMARY KEY:
+           primary keys are used in a column to make sure that each value in a column is unique and not null.
+Note: A table can contain one primary key only.
+We can transaction in two methods
+
+Method 1 applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE transactions(
+	trabsaction_id INT PRIMARY KEY,
+    transcation_amount DECIMAL(3,1) default 0
+);
+
+Method 2  using costraint with alter keyword:
+    after creating a table and we need to create a default value we can use this Method
+eg: ALTER TABLE transaction 
+    ADD CONSTRAIN
+    PRIMARY KEY(trabsaction_id);
+
+
+eg:
+INSERT INTO transactions
+VALUES (1, 2.3),
+	   (2, 3.4),        #Error Code: 1062. Duplicate entry '1' for key 'transactions.PRIMARY'
+       (3, 4.5),
+	   (3, 5.6);
+SELECT * FROM transactions;
