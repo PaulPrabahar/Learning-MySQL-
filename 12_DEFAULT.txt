@@ -1,0 +1,19 @@
+DEFAULT:
+        we use default constrain to set a default value to a column incase the value is not provided.
+The default can be used in two ways.
+
+Method 1 applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE hello(
+	product_name VARCHAR(25),
+    product_no INT ,                # to add check
+    product_price DECIMAL(2, 1) DEFAULT 0
+);
+
+Method 2  using costraint with alter keyword:
+    after creating a table and we need to create a default value we can use this Method
+eg: ALTER TABLE hello 
+    ALTER price SET DEFAULT 0
+
+nOTE: default can have any type of data type eg: NOW()
+times DATETIME() DEFAULT NOW()
