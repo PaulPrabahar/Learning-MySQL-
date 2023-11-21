@@ -1,0 +1,29 @@
+DATE: 
+     This data type is used define date as a data, To use this we have to use a keyword "DATE" .
+i.e: daydate DATA;
+
+TIME:
+     This data type is used to define time as a data, To use this we have to use a keyword "TIME".
+i.e: daytime TIME;
+
+DATETIME:
+     This data type is used to define time and date as a  data, To use this we have to use a keyword "DATETIME"
+i.e: dateandtime DATETIME;
+
+eg: 
+    CREATE TABLE dataandtime(
+	date_date DATE,
+    time_time Time,
+    dateandtimes DATETIME
+);
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+CURRENT_DATE and CURRENT_TIME:
+To get the current date and current time we can use function called  CURRENT_DATE() and CURRENT_TIME() also we can use NOW() function to get the 
+current date and time.
+i.e: values(CURRENT_DATE(), CURRENT_TIME(), NOW())
+
+eg: 
+   INSERT INTO dataandtime
+   VALUES(CURRENT_DATE(), CURRENT_TIME(), NOW());
