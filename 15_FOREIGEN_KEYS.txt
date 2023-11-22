@@ -1,0 +1,2 @@
+FORIGEN KEYS: 
+             A field or sub-field of one table is used as a PRIMARY KEY for another table is called FORIGEN KEYS.
