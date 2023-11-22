@@ -1,2 +1,12 @@
 AUTO INCREAMENT:
               AUTO INCREAMENT set to column where the  PRIMARY KEY is increamented automatically whren new data is added to the table
+when using the auto increament the key value is set 1 as default.
+
+Method Applying directly:
+    Mentioning them explictly them while referencing the data 
+eg: CREATE TABLE transactions(
+	trabsaction_id INT PRIMARY KEY AUTO INCREAMENT,
+    transcation_amount DECIMAL(3,1) default 0
+);
+
+also we can start  the AUTO INCREAMENT as the number we desier by AUTO INCREAMENT = 10000(any number)
